@@ -1,0 +1,7 @@
+#!/bin/sh
+
+echo Previous: $(ls -altr ~/.cbtrc)
+echo "..."
+ln -sf ~/.google/bigtable/.cbtrc.$1 ~/.cbtrc 
+echo Current: $(ls -altr ~/.cbtrc)
+echo $(cat ~/.cbtrc)
