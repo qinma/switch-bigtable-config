@@ -5,7 +5,7 @@
 .cbtrc.prod
 ```
 
-The content inside should look like 
+The content inside each file above should look like 
 ```
 project = p13n-dev-112818
 instance = p13n-instance-p13n
