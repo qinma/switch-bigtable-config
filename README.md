@@ -1,18 +1,24 @@
-Create files at ~/.google/bigtable/
+1. Create files at ~/.google/bigtable/
 ```
 .cbtrc.p13n
 .cbtrc.dev
 .cbtrc.prod
 ```
 
-Put script file switchbigtable at ~/cmds/. This file will force to create a symlinks ~/.cbtrc to point to one of files you created above.
+The content inside should look like 
+```
+project = p13n-dev-112818
+instance = p13n-instance-p13n
+```
 
-Make swithcbigtable executable by runing command 
+2. Then put script file switchbigtable at ~/cmds/. This file will force to create a symlinks ~/.cbtrc to point to one of files you created above.
+
+3. Make swithcbigtable executable by runing command 
 ```
 chmod 755 swtichbigtable
 ```
 
-Switching bigtable default config file
+Now, you should be able to use command switch bigtable default config files
 ```
 switchbigtable p13n
 ```
